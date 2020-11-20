@@ -56,6 +56,7 @@ container{
 	width: 90%;
     padding-right: 30px;
     padding-bottom: 25px;
+    overflow: hidden;
 }
 
 .green{
@@ -110,12 +111,14 @@ li{
     left: -10px;
     z-index: -1;
 }
+
 .paw2{
     position: absolute;
     bottom: 165px;
     right: -10px;
     z-index: -1;
 }
+
 .paw3{
     position: absolute;
     bottom: 245px;
@@ -136,6 +139,13 @@ padding: 30px;
 
 .purple{
 	 background-color: #80759A;
+}
+
+.testimonial{
+  border: 2px solid #978EAC;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 5px;
 }
 
 .testimonials{
