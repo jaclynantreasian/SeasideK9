@@ -1,0 +1,29 @@
+@media only screen and (min-width: 992px) {
+
+.doghero{
+	width: 40%;
+}
+
+.home__image{
+	width: 75%;
+}
+
+.paragraph__text{
+	width: 50%;
+}
+
+.picture{
+	padding-top: 30px;
+}
+
+.section__container{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.text__container{
+	width: 60%;
+    margin-left: 50px;
+	flex-direction: column;
+}
+}

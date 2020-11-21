@@ -83,7 +83,7 @@ h2{
 
 h3{
 	margin-top: 0;
-	padding-top: 40px;
+	padding-top: 20px;
 	font-size: 1.5em;
 	font-weight: bold;
 	font-family: "Karla";
@@ -124,8 +124,8 @@ li{
 
 .paw2{
     position: absolute;
-    bottom: 165px;
-    right: -10px;
+    bottom: 33px;
+    right: -47px;
     z-index: -1;
 }
 
@@ -152,8 +152,8 @@ padding: 30px;
 
 .testimonial{
   border: 2px solid #978EAC;
-  padding: 20px;
-  margin-bottom: 25px;
+  padding: 15px;
+  margin: 10px 20px;
   border-radius: 5px;
 }
 
