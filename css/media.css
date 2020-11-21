@@ -1,29 +1,81 @@
 @media only screen and (min-width: 992px) {
+	.conclusion{
+		padding-left: 10%;
+	}
 
-.doghero{
-	width: 40%;
-}
+	.dog{
+		margin-bottom: 0;
+		overflow: visible;
+	}
 
-.home__image{
-	width: 75%;
-}
+	.doghero{
+		width: 90%;
+		position: relative;
+	}
 
-.paragraph__text{
-	width: 50%;
-}
+	.home__image{
+		width: 100%;
+		border-radius: 5%;
+	}
 
-.picture{
-	padding-top: 30px;
-}
+	.main{
+		padding: 0;
+	}
 
-.section__container{
-	display: flex;
-	flex-direction: row-reverse;
-}
+	.paragraph__text{
+		width: 50%;
+	}
 
-.text__container{
-	width: 60%;
-    margin-left: 50px;
-	flex-direction: column;
-}
+	.picture{
+		padding: 5%;
+		width: 80%;
+	}
+
+	.section__container{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.section__container_two{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	ul.testimonials{
+		display:flex;
+		flex-direction: row;
+	}
+
+	.testimonial{
+		display: flex;
+		width: 33.3%;
+		flex-direction: column;
+	}
+
+	ul{
+		display: flex;
+	}
+
+	.text{
+		padding-left: 5%;
+	}
+
+	.text__container{
+		width: 60%;
+    	padding: 5% 10%;
+		flex-direction: column;
+	}
+
+	.text__container__two{
+		width: 60%;
+    	padding: 5% 5% 5% 10%;
+		flex-direction: column;
+
+	}
+
+	.two{
+		padding-left: 10%;
+		padding-right: 0;
+	}
+	
 }
