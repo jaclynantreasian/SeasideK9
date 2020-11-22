@@ -1,6 +1,6 @@
 @media only screen and (min-width: 992px) {
 	.conclusion{
-		padding-left: 10%;
+		text-align: center;
 	}
 
 	.dog{
@@ -11,6 +11,7 @@
 	.doghero{
 		width: 90%;
 		position: relative;
+		 margin-left: 0;
 	}
 
 	.home__image{
@@ -20,10 +21,28 @@
 
 	.main{
 		padding: 0;
+		display: flex;
+		justify-content: center;
 	}
 
 	.paragraph__text{
 		width: 50%;
+	}
+
+	.paw2{
+		bottom: 33px;
+    	left: 373px;
+		width: 20%;    	
+	}
+
+	.paw3{
+		top: 18px;
+    	right: 389px;
+	}
+
+	.paw4{
+		left: 30px;
+    	top: -18px;
 	}
 
 	.picture{
@@ -34,6 +53,7 @@
 	.section__container{
 		display: flex;
 		flex-direction: row;
+		max-width: 1200px;
 	}
 
 	.section__container_two{
@@ -70,7 +90,6 @@
 		width: 60%;
     	padding: 5% 5% 5% 10%;
 		flex-direction: column;
-
 	}
 
 	.two{

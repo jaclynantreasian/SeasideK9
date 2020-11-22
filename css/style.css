@@ -14,9 +14,9 @@ body{
 }
 
 .button_parent{
-    padding-bottom: 40px;
     margin-left: 20px;
 }
+
 container{
     max-width: 1800px;
 }
@@ -60,20 +60,41 @@ container{
     margin-bottom: 25px;
     position: relative;
     overflow: hidden;
-    height: 305px;
+    height: 315px;
 }
 
 .doghero{
     position: absolute;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.header{
+    height: 0;
+    display: flex;
+    background-color:#2A8078;
+}
+    
+.header__wrap{
+    display: flex;
+    justify-content: space-between;
 }
 
 .green{
     background-color: #2A8078;
 }
 
+.home__image{
+    width: 100%;
+}
+
 h1{
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.25em;
+    padding: 1em 0 .5em 0;
+    font-family: "karla";
+    font-size: 3em;
+
 }
 
 h2{
@@ -95,9 +116,6 @@ h5{
 	margin: 0;
 }
 
-img{
-	width: 100%;
-}
 
 li{
     list-style: none;
@@ -106,7 +124,7 @@ li{
 }
 
 .main{
-    padding: 0px 0px 30px 0px;    
+    padding: 0px 0px 50px 0px;    
     z-index: 1;
     position: relative;
 }
@@ -117,7 +135,7 @@ li{
 
 .paw1{
     position: absolute;
-    top: 65px;
+    top: 165px;
     left: -10px;
     z-index: -1;
 }
@@ -131,6 +149,12 @@ li{
 
 .paw3{
     position: absolute;
+    bottom: 205px;
+    z-index: -1;
+}
+
+.paw4{
+     position: absolute;
     bottom: 245px;
     z-index: -1;
 }
