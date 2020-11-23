@@ -1,4 +1,11 @@
 @media only screen and (min-width: 992px) {
+	
+	.ctr_button{
+		display: flex;
+		justify-content: center;
+		 padding-bottom: 80px;
+	}
+
 	.conclusion{
 		text-align: center;
 	}
@@ -36,6 +43,11 @@
 		width: 50%;
 	}
 
+	.paw1{
+		top: 1px;
+		left: -10px;
+	}
+
 	.paw2{
 		bottom: 33px;
     	left: 373px;
@@ -43,8 +55,8 @@
 	}
 
 	.paw3{
-		top: 18px;
-    	right: 389px;
+		top: 61px;
+    	right: 470px;
 	}
 
 	.paw4{
@@ -63,6 +75,7 @@
 		flex-direction: row;
 		max-width: 1200px;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	.section__container_two{
@@ -91,5 +104,9 @@
 	.text__container{
 		width: 40%;
 		flex-direction: column;
+	}
+
+	.test__header{
+		padding: 50px 0 0 60px;
 	}
 }
