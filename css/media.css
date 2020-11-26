@@ -1,5 +1,8 @@
 @media only screen and (min-width: 992px) {
-	
+	.about{
+		width: 65%;
+	}
+
 	.ctr_button{
 		display: flex;
 		justify-content: center;
@@ -10,6 +13,7 @@
 		text-align: center;
 	}
 
+
 	.desktop__header{
    		 display: initial;
 	}
@@ -17,6 +21,7 @@
 	.dog{
 		margin-bottom: 0;
 		overflow: visible;
+		width: 55%;
 	}
 
 	.doghero{
@@ -24,10 +29,19 @@
 		position: relative;
 		 margin-left: 0;
 	}
-
+	.full_page_headline{
+	margin-top: 50px;
+	}
 	.home__image{
 		width: 100%;
 		border-radius: 5%;
+	}
+
+	.list{
+		display: flex;
+		flex-direction: row;
+		max-width: 1200px;
+		justify-content: space-between;
 	}
 
 	.main{
@@ -68,8 +82,44 @@
 		width: 50%;
 	}
 
+	.picture_fullpage{
+		width: 95%;
+ 		height: 450px;
+ 		overflow: hidden;
+ 		border-radius: 5%;
+ 		margin: 0 auto;
+	}
+
+	.picture_fullpage_about{
+		width: 80%;
+ 		height: 550px;
+ 		overflow: hidden;
+ 		border-radius: 5%;
+ 		margin: 0 auto;
+
+	}
+
+	.pictureThird_container{
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pictureThird_mask{
+		height: 230px;
+    	overflow: hidden;
+    	border-radius: 5%;
+	}
+
+	.purpleGradient{
+    background-image: linear-gradient(to left, #6b5f8a
+	, #aea7be);
+	}
+
+
 	.section__container, 
-	.section__container_two{
+	.section__container_two,
+	.sectionThird{
 		margin: 3rem 0;
 		display: flex;
 		flex-direction: row;
@@ -77,20 +127,45 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-
+	.section__container--two {
+		flex-direction: row-reverse;
+	}
 	.section__container_two{
 		flex-direction: row-reverse;
+	}
+
+	.section__column{
+		display: flex;
+		flex-direction: column;
+		margin: 2% 12%;
+	}
+
+	.section__row{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.top_padding_zero{
+		margin-top: 0;
 	}
 
 	ul.testimonials{
 		display:flex;
 		flex-direction: row;
+		max-width: 1200px;
+		justify-content: space-between;
+
 	}
 
 	.testimonial{
 		display: flex;
-		width: 33.3%;
+		width: 30%;
 		flex-direction: column;
+	}
+
+	.text_container{
+		padding-top: 50px;
+		margin-left: 12%;
 	}
 
 	ul{
@@ -98,9 +173,8 @@
 	}
 
 	.text{
-		padding: 0;
+		padding-left: 0;
 	}
-	
 	.text__container{
 		width: 40%;
 		flex-direction: column;
@@ -108,5 +182,9 @@
 
 	.test__header{
 		padding: 50px 0 0 60px;
+	}
+
+	.third__container{
+		width: 30%;
 	}
 }

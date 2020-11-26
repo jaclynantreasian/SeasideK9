@@ -14,16 +14,24 @@ body{
 }
 
 .button_parent{
-    margin-left: 20px;
+    padding-top: 20px;
+}
+
+
+.centerText{
+    text-align: center;
 }
 
 container{
-    max-width: 1800px;
+    max-width: 12
+    00px;
 }
 
 .copy{
 	line-height: 1.5em;
 	padding-bottom: 20px;
+    margin-bottom: 0;
+
 }
 
 .cta__button{
@@ -39,7 +47,7 @@ container{
     width: 220px;
     color: #F1EFFF;
     line-height: 30px;
-}
+    }
 
 .cta__button__orange{
     text-align: center;
@@ -64,13 +72,18 @@ container{
     margin-bottom: 25px;
     position: relative;
     overflow: hidden;
-    height: 315px;
+    height: 375px;
 }
 
 .doghero{
     position: absolute;
-    width: 90%;
+    width: 100%;
     margin-left: 10%;
+}
+
+.full_page_headline{
+    font-size: 2.5em;
+    margin-left: 20px;
 }
 
 .header{
@@ -86,6 +99,12 @@ container{
 
 .green{
     background-color: #2A8078;
+}
+
+.greenGradient{
+    background-image: linear-gradient(to right, #25746c
+, #52c7bb);
+
 }
 
 .home__image{
@@ -168,16 +187,19 @@ li{
 padding: 30px;
 }
 
-.picture{
+.picture, .pictureThird{
     padding: 0;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 }
 
-.purple{
-	 background-color: #80759A;
+
+.purple,
+.purpleGradient{
+    background-color:#80759A;
 }
+
 
 .testimonial{
   border: 2px solid #978EAC;
@@ -197,5 +219,10 @@ padding: 30px;
 
 .text{
     padding-right: 20px;
+}
+
+
+.text_container,
+.text__container{
     padding-left: 20px;
 }
