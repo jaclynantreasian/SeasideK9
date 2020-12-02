@@ -23,8 +23,7 @@ body{
 }
 
 container{
-    max-width: 12
-    00px;
+    max-width: 1200px;
 }
 
 .copy{
@@ -80,6 +79,10 @@ container{
     width: 100%;
     margin-left: 10%;
 }
+.fas.fa-bars{
+    color: #eee;
+    font-size: 1.5em;
+}
 
 .full_page_headline{
     font-size: 2.5em;
@@ -87,18 +90,57 @@ container{
 }
 
 .header{
-    height: 0;
     display: flex;
-    background-color:#2A8078;
-}
-    
-.header__wrap{
-    display: flex;
-    justify-content: space-between;
+    background-color: #2A8078;
+    width: 100%;
+    z-index: 100;
+    padding: 0 10px;
+    position: fixed;
 }
 
+.header__nav.hidden{
+    display: none;
+}
+
+.header__button{
+    z-index: 200;
+}
+
+.header__wrap{
+   display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header__logo{
+    margin: 10px;
+    height: 30px;
+}
+
+.header__nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    padding-top: 150px;
+    opacity: .95;
+    min-height: 1000px;
+    font-size: 18px;
+    width: 40%;
+}
+
+.header__nav a{
+    display: block;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #ddd;
+    }
+
 .green{
-    background-color: #2A8078;
+        background-image: linear-gradient(to right, #25746c
+, #52c7bb);
 }
 
 .greenGradient{
@@ -117,8 +159,11 @@ container{
     line-height: 1.25em;
     padding: 1em 0 .5em 0;
     font-family: "karla";
-    font-size: 2.5em;
+    font-size: 2.5em
 
+}
+.mobile__header{
+    margin: 0;
 }
 
 h2{
@@ -151,6 +196,10 @@ li{
     padding: 0px 0px 50px 0px;    
     z-index: 1;
     position: relative;
+}
+
+.negmargin{
+    margin-top: -50px;
 }
 
 .one, .two, .three{
@@ -200,15 +249,16 @@ padding: 30px;
     background-color:#80759A;
 }
 
+.space_top{
+    padding-top: 4em;
+}
 
 .testimonial{
-  border: 2px solid #978EAC;
-  padding: 15px;
-  margin: 10px 20px;
+  padding: 0 25px;
   border-radius: 5px;
 }
 
-.testimonials{
+#testimonials{
     line-height: 1.5em;
     padding-bottom: 40px;
 }
@@ -221,8 +271,23 @@ padding: 30px;
     padding-right: 20px;
 }
 
+.textleft{
+    padding-left: 20px;
+}
+
+.testimonials{
+    padding-left: 0;
+}
+
+.test__header{
+    padding-left: 20px;
+}
 
 .text_container,
 .text__container{
     padding-left: 20px;
 }
+
+
+
+

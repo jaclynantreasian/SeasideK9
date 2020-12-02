@@ -6,26 +6,45 @@
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<link href="https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
     	<link rel="stylesheet" type="text/css" href="css/normalize.css">   
         <link rel="stylesheet" type="text/css" href="css/style.css"> 
         <link rel="stylesheet" type="text/css" href="css/media.css">   
+        	<!-- owl for testimonials -->
+
+		<link rel="stylesheet" href="owl-carousel/owl.carousel.css"> 
+		<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+	 	<script src="script/jquery-1.9.1.min.js"></script>
+		<script src="script/owl.carousel.js"></script>
+		<script src="script/seasidek9.js"></script>
+		 <script>   
+			$(document).ready(function() {			 
+	 			$("#testimonials").owlCarousel({
+				    items : 3,
+				    itemsMobile : [500,1]
+				});
+			});
+		 </script>
     </head>
 
     <body>
         <header class="header">
             <section class="header__wrap">
            		<a href="./index.html"> 
-           			<img class="header__logo" src="images/logo.png" alt="Seaside K9 Logo">
+           		<img class="header__logo" src="images/logo.png" alt="Seaside K9 Logo">
            		</a>
-            	<i class="header__button fas fa-bars"></i>
+           		<i class="header__button fas fa-bars"></i>
             	<nav class="header__nav hidden">
                 	<a href="./aboutus.html"> About Us</a>
                 	<a href="./services.html">Services</a>
-                	<a class=href="#">Book</a>
-            	</nav>
+                	<a href="https://doxford.net/920ae2ae-3ee6-4462-8ea6-10e4676f7081/register">Book</a>
+           		</nav>
             </section>
         </header>
 
+            
     	<section class="container">
         	<section class="main green">
         		<h2 class="mobile__header">Doggie Daycare in Quincy, MA</h1>
@@ -36,7 +55,7 @@
 			        <div class="dog">
 			            <img class="doghero" src="images/dogheader.png">
 			        </div>
-        			<div class="text__container">
+        			<div class="text__container space_top">
          				<h1 class="desktop__header">Doggie Daycare in </br> Quincy, MA</h1>
 				        <h3 class="text">Loving care and fun filled days for your most precious companions</h3>
 				        <div class="paw2">
@@ -44,7 +63,7 @@
 				        </div>
 				        <p class="text copy">At Seaside K9s, your dog will have a blast playing in our spacious backyard, as well as visiting local beaches and trails.  All furry guests get lots of socialization with other dogs as well as love, attention, and cuddles! Rest easy knowing your dog will come home safe, tired, and happy!</p>
 				        <div class="button_parent">
-				            <a class="cta__button__orange" id ="one" href="#">Book Today!</a>
+				            <a class="cta__button__orange" id ="one" href="https://doxford.net/920ae2ae-3ee6-4462-8ea6-10e4676f7081/register">Book Today!</a>
 				        </div>
        				</div>
        			</div>
@@ -61,7 +80,7 @@
         				</div>
 				        <p class="text copy">At Seaside K9s, all dogs get plenty of exercise and fresh air. We spend most of our days romping around in our yard which has hygienic animal friendly turf. We believe that a tired pup is a happy,and better behaved, pup. Therefore, we incorporate structured walks, socialization, and food puzzles into all stays.</p>
 				        <div class="button_parent">
-				            <a class="cta__button__orange" id ="one" href="#">Book Today!</a>
+				            <a class="cta__button__orange" id ="one" href="./services.html">Learn More</a>
 				        </div>
        				</div>
        			</div>
@@ -78,16 +97,17 @@
 				        </div>
 				        <p class="text copy">We are a small family owned business, with a true love for animals. Together, we have over 15 years of experience in canine care, both personal and professional. We have experience with all different breeds, ages, animals with special needs, medication administration, and are certified in animal first aid and CPR. Your pup will always be supervised and we love sending photo and video updates during any stay.</p>
 				        <div class="button_parent">
-				            <a class="cta__button__orange" id ="one" href="#">Check Availability</a>
+				            <a class="cta__button__orange" id ="one" href="https://doxford.net/920ae2ae-3ee6-4462-8ea6-10e4676f7081/register">Check Availability</a>
 				        </div>
 	       			</div>
 	       		</div>
 	    	</section>
     	</div>
     
-    <div class="purple">
+    <section class="purple">
      <h3 class="text test__header"> Pet Parents Love Us!</h3>
-	<ul class="testimonials">
+
+	<ul id="testimonials" class= "owl-carousel">
         <li class="testimonial">
        <p>Maya has stayed with Molly and Ethan for a weekend and for just daycare now. Each time she has come home she’s been happy and sleepy! We know whenever we need care for Maya, that Molly and Ethan are our go-to people. Thank you for opening your home to our fur baby.</p>
        <p>Rachael C.</p>
@@ -103,17 +123,30 @@
         <p>Brenna G</p>
 
         </li>
+          <li class="testimonial">
+          <p>Ethan & Molly were AMAZING!! Our lab Ralph stayed with them for a weekend & every picture that was sent to me, Ralph had such a big smile on his face! They were great with communication & made sure Ralph had so much fun. We will 100% be brining Ralph back for daycare & weekend stays.</p>
+          <p>Chrissy B.</p>
+
+        </li>
+        <li class="testimonial">       
+          <p>My Tucker had so much fun with Ethan and molly! He made new friends and the pictures Ethan sent me were so adorable!!! I highly recommend and Tucker will be going back for more daycare!! Fabulous people!</p>
+           <p class="author">Yaritza D.</p>
+
+        </li>
+         <li class="testimonial">
+          <p>Molly and Ethan are fantastic! It was very easy to schedule the overnight stay for our husky mix, and their place seems perfectly suited as a dog hangout. They respond quickly to questions, and were very flexible on timing. Our pup had such a good time that he slept most of the next day, having expended all his energy at his sleepover! Great experience, highly recommended.</p>
+          <p class="author">Arthur E.</p>
+
+        </li>
         </ul>
         <div class="conclusion">
 		<h3 class="text centerText"> Book With Seaside K9 Today!</h3>
    	 	 <div class="button_parent center">
-            <a class="cta__button__orange" id ="one" href="#">Get Started</a>
+            <a class="cta__button__orange" id ="one" href="https://doxford.net/920ae2ae-3ee6-4462-8ea6-10e4676f7081/register">Get Started</a>
          </div>
-         </div>
-    </div>
+    </section>
+
 </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -29,9 +29,31 @@
 		position: relative;
 		 margin-left: 0;
 	}
-	.full_page_headline{
-	margin-top: 50px;
+
+
+	.fas.fa-bars{
+    display: none;
 	}
+
+
+	.full_page_headline{
+		margin-left: 130px;
+	    padding-top: 50px;
+	    margin-bottom: 40px;
+	}
+
+	header{
+		overflow: hidden;
+	}
+
+	.header__nav.hidden{
+		position: relative;
+    	min-height: auto;
+    	padding-top: 0;
+    	flex-direction: row;
+    	display: flex;
+	}
+
 	.home__image{
 		width: 100%;
 		border-radius: 5%;
@@ -58,7 +80,7 @@
 	}
 
 	.paw1{
-		top: 1px;
+		top: 45px;
 		left: -10px;
 	}
 
@@ -83,7 +105,7 @@
 	}
 
 	.picture_fullpage{
-		width: 95%;
+		width: 80%;
  		height: 450px;
  		overflow: hidden;
  		border-radius: 5%;
@@ -149,7 +171,7 @@
 		margin-top: 0;
 	}
 
-	ul.testimonials{
+	#testimonials{
 		display:flex;
 		flex-direction: row;
 		max-width: 1200px;
@@ -159,7 +181,7 @@
 
 	.testimonial{
 		display: flex;
-		width: 30%;
+		width: 100%;
 		flex-direction: column;
 	}
 
