@@ -3,6 +3,10 @@
 		width: 65%;
 	}
 
+.button_parent{
+	padding-top: 20px;
+}
+
 	.ctr_button{
 		display: flex;
 		justify-content: center;
@@ -20,12 +24,13 @@
 
 	.dog{
 		margin-bottom: 0;
-		overflow: visible;
-		width: 55%;
+		overflow: hidden;
+		width: 50%;
+		height: 550px;
 	}
 
 	.doghero{
-		width: 90%;
+		width: 100%;
 		position: relative;
 		 margin-left: 0;
 	}
@@ -40,6 +45,11 @@
 		margin-left: 130px;
 	    padding-top: 50px;
 	    margin-bottom: 40px;
+	}
+
+	.green{
+background-image: linear-gradient(to right, #25746c
+, #52c7bb);
 	}
 
 	header{
@@ -156,6 +166,10 @@
 		flex-direction: row-reverse;
 	}
 
+	.section__container_two--no_margin{
+		margin-bottom: 0;
+	}
+
 	.section__column{
 		display: flex;
 		flex-direction: column;
@@ -165,6 +179,10 @@
 	.section__row{
 		display: flex;
 		flex-direction: row;
+	}
+
+	.space_top{
+		padding-top: 4em;
 	}
 
 	.top_padding_zero{
@@ -197,13 +215,20 @@
 	.text{
 		padding-left: 0;
 	}
+
+	#testimonials{
+		padding-left: 20px;
+	}
+
 	.text__container{
 		width: 40%;
 		flex-direction: column;
 	}
 
 	.test__header{
-		padding: 50px 0 0 60px;
+		padding: 50px 20px 0 43px;
+		margin-bottom: 0;
+	
 	}
 
 	.third__container{
