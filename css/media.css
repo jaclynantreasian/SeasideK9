@@ -44,6 +44,12 @@
 		 padding-bottom: 100px;
 	}
 
+	.custompad{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
 	.desktop__header{
 			 display: initial;
 	}
@@ -56,7 +62,11 @@
 	}
 
 	.dog_desktop{
-		display: initial;
+		    display: initial;
+    		position: absolute;
+    		bottom: 0;
+   			 width: 100%;
+    		  left: 0;
 	}
 
 	.dog_mobile{
@@ -64,8 +74,6 @@
 	}
 	.doghero{
 		width: 100%;
-		position: relative;
-		 margin-left: 0;
 	}
 
 	.extra_width{
@@ -76,6 +84,10 @@
 	display: none;
 	}
 
+	.FAQ_container{
+			width: 70%;
+	}
+
 	.footer_container{
 		display: flex;
 		flex-direction: row;
@@ -84,6 +96,20 @@
 		max-width: 1200px;
 		justify-content: space-between;
 	}
+
+
+	.forty_container{
+		width: 100%;
+   		 max-width: 1200px;
+   		 display: flex;
+    	justify-content: flex-end
+	}
+
+	.front_page_container{
+    display: flex;
+    max-width: 1200px;
+    min-height: 625px;
+}
 
 	.full_page_container{
 		padding: 100px;
@@ -97,6 +123,10 @@
 
 	.full_page_headline--noPadding{
 		font-size: 2.5em;
+	}
+
+	.fullText{
+    width: 60%;
 	}
 
 	header{
@@ -117,8 +147,6 @@
 		margin-right: 20px;
 		color: #b0d0cc;
 	}
-
-
 
 
 	.holiday_container{
@@ -151,7 +179,11 @@
 		padding-top: 3rem;
 	}
 
-	
+	.max_width{
+		max-width: 1200px;
+		display: flex;
+		justify-content: center;
+	}
 
 	.negmargin{
 		margin-left: 0;
@@ -184,24 +216,26 @@
 	}
 
 	.paw1{
-		top: 45px;
-		left: -10px;
+		top: 100px;
+    	left: 593px;
 	}
 
 	.paw2{
+		display: initial;
+		position: absolute;
 		bottom: 33px;
 		left: 373px;
 		width: 20%;    	
 	}
 
 	.paw3{
-		    top: -40px;
+		    top: 40px;
 				 right: 400px;
 	}
 
 	.paw4{
-		left: 30px;
-		top: -18px;
+		left: -30px;
+   		 top: -31px;
 	}
 
 	.paw5{
@@ -366,7 +400,7 @@
 	}
 
 	.text__container__forty{
-		width: 40%;
+		width: 45%;
 		flex-direction: column;
 
 	}

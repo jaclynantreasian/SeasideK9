@@ -45,8 +45,6 @@ body{
     margin-bottom: 0;
 }
 
-
-
 .cta__button{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -77,6 +75,11 @@ body{
     line-height: 30px;
 }
 
+.custompad{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
 .desktop__header{
     display: none;
 }
@@ -87,12 +90,16 @@ body{
     height: 375px;
 }
 
+.doghero{
+    width: 100%;
+}
+
 .dog_desktop{
     display: none;
 }
 
 .dog_mobile{
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
@@ -116,6 +123,12 @@ body{
     font-size: 1.5em;
     color: #fff;
 }
+
+
+.framepaw{
+    height: 200px;
+}
+
 
 .font-large{
     font-size: 2.5em;
@@ -153,12 +166,12 @@ body{
 
 .greenGradient{
       background-image: linear-gradient(to right, #1b6964
-    , #009e92);
+    , #008e92);
     }
 
 .header{
     display: flex;
-    background-color: #2A8078;
+    background-color: #1c776e;
     width: 100%;
     z-index: 100;
     padding: 0 10px;
@@ -199,8 +212,8 @@ body{
     opacity: .95;
     min-height: 1000px;
     font-size: 18px;
-    width: 40%;
-    background-color: #2A8078;
+    width: 60%;
+    background-color: #1c776e;
 }
 
 .header__nav a{
@@ -212,8 +225,12 @@ body{
     border-radius: 10px
     }
 
+.headlineText{
+    font-size: 2.5em;
+}
+
 .green{
-      background-color: #2A8078;
+      background-color: #1c776e;
       width: 100%;
 }
 
@@ -313,7 +330,7 @@ li{
 }
 
 li.testimonial{
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
  .padding__five{
@@ -341,22 +358,17 @@ li.testimonial{
 }
 
 .paw1{
+    width: 200px;
     position: absolute;
-    top: 165px;
+    top: 540px;
     left: -10px;
     z-index: 1;
 }
 
-.paw2{
-    position: absolute;
-    bottom: 33px;
-    right: -47px;
-    z-index: 1;
-}
-
 .paw3{
+    width: 200px;
     position: absolute;
-    bottom: 185px;
+    bottom: 85px;
     z-index: 1;
 }
 
@@ -367,6 +379,7 @@ li.testimonial{
 }
 
 .paw5{
+    width: 200px;
     position: absolute;
     top: 425px;
     z-index: 1;
@@ -390,9 +403,21 @@ padding: 30px;
 
 .purple,
 .purpleGradient{
-    background-color:#80759A;
+    background-color: #80759A;
 }
 
+.round{
+    height: 100px;
+    width: 100%;
+}
+
+.round_image{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
 
 .row_container{
     padding-bottom: 40px;
@@ -472,6 +497,7 @@ padding: 30px;
     margin-bottom: 0;
 }
 
+.FAQ_container,
 .text_container,
 .text__container{
     padding-left: 20px;
