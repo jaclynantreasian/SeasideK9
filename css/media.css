@@ -3,13 +3,14 @@
 	.header__nav a:hover, 
 	.header__nav a.active{
 		color: #fff;
-		background-color: #324b48;
+		background-color: #060606;
 	}
 
 	.header {
 		padding: 0;
 		justify-content: center;
 	}
+
 	.header__wrap {
 		max-width: 1200px;
 	}
@@ -140,12 +141,13 @@
 		flex-direction: row;
 		display: flex;
 		justify-content: flex-end;
+		background-color: #474747;
 	}
 
 	.header__nav a{
 		padding: 5px 20px;
 		margin-right: 20px;
-		color: #b0d0cc;
+		color: #a5a7a6;
 	}
 
 
@@ -216,8 +218,8 @@
 	}
 
 	.paw1{
-		top: 100px;
-    	left: 593px;
+		top: 150px;
+    	left: 630px;
 	}
 
 	.paw2{
@@ -406,8 +408,8 @@
 	}
 
 	.test__header{
-		padding: 50px 0 0 40px;
-		margin-bottom: 0;	
+	padding: 50px 0 20px 40px;		
+	margin-bottom: 0;	
 	}
 
 	.third__container{

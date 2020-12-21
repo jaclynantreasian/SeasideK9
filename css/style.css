@@ -116,11 +116,11 @@ body{
 
 .fas.fa-bars{
     color: #fff;
-    font-size: 1.5em;
+    font-size: 30px;
 }
 
 .fas.fa-times{
-    font-size: 1.5em;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -171,11 +171,12 @@ body{
 
 .header{
     display: flex;
-    background-color: #1c776e;
+    background-color: #474747;
     width: 100%;
     z-index: 100;
     padding: 0 10px;
     position: fixed;
+    height: 50px;
 }
 
 .header__nav.hidden{
@@ -184,8 +185,6 @@ body{
 
 .header__button{
     z-index: 200;
-    height: 100%;
-    width: 60px;
     display: flex;
     justify-content: flex-end;
 }
@@ -194,12 +193,10 @@ body{
    display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: baseline;
-    padding: .5em 0;
+    align-items: center;
 }
 
 .header__logo{
-    margin: 10px;
     height: 30px;
 }
 
@@ -230,7 +227,7 @@ body{
 }
 
 .green{
-      background-color: #1c776e;
+      background-color: #50908A;
       width: 100%;
 }
 
@@ -250,6 +247,8 @@ body{
 }
 .mobile__header{
     margin: 0;
+    padding-top: 2em;
+
 }
 
 h2{
@@ -494,6 +493,7 @@ padding: 30px;
 
 .test__header{
     padding-left: 20px;
+    padding-bottom: 20px;
     margin-bottom: 0;
 }
 
