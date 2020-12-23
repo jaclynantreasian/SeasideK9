@@ -1,9 +1,5 @@
-const setActive = () => {
-    const splitPath = window.location.pathname.split('/');
-    document.querySelector(`a[href='./${splitPath[splitPath.length-1]}']`).classList.add('active')
-}
+
 window.onload = function() {
-    setActive();
     // add events to hamburger menu
     document.querySelector('.header__button').addEventListener('click', function(e) {
         var nav=document.querySelector('.header__nav')

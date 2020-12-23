@@ -1,3 +1,16 @@
+@media only screen and (min-width: 688px){
+
+.paw1{
+	top: 700px;
+}
+
+.paw5{
+	top: 600px;
+}
+
+}
+
+
 @media only screen and (min-width: 992px) {
 		
 	.header__nav a:hover, 
@@ -73,8 +86,11 @@
 	.dog_mobile{
 		display: none;
 	}
+
 	.doghero{
 		width: 100%;
+		position: absolute;
+		bottom: 0;
 	}
 
 	.extra_width{
@@ -141,13 +157,15 @@
 		flex-direction: row;
 		display: flex;
 		justify-content: flex-end;
-		background-color: #474747;
+		background-color: #393939;
 	}
 
 	.header__nav a{
 		padding: 5px 20px;
 		margin-right: 20px;
 		color: #a5a7a6;
+		border: solid transparent;
+
 	}
 
 
@@ -218,8 +236,8 @@
 	}
 
 	.paw1{
-		top: 150px;
-    	left: 630px;
+		top: 70px;
+    	left: 650px
 	}
 
 	.paw2{

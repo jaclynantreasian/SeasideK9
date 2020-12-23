@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<title>Seaside K9s Quincy, MA</title>
-    	<meta charset="utf-8">
-  <meta id="meta_viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    	<link href="https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <title>Seaside K9s Quincy, MA</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://use.typekit.net/tps0ebx.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans:wght@400;500;600;700&family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
         <link rel="stylesheet" type="text/css" href="css/normalize.css">   
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/media.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="css/media.css">   
+            <!-- owl for testimonials -->
+
+        <link rel="stylesheet" href="owl-carousel/owl.carousel.css"> 
+        <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+        <script src="script/jquery-1.9.1.min.js"></script>
+        <script src="script/owl.carousel.js"></script>
         <script src="script/seasidek9.js"></script>
+         <script>   
+            $(document).ready(function() {           
+                $("#testimonials").owlCarousel({
+                    items : 3,
+                    itemsMobile : [500,1]
+                });
+            });
+         </script>
     </head>
+
     <body>
-        <header class="header">
+         <header class="header">
             <section class="header__wrap">
-                <a href="./index.html"> 
-                <img class="header__logo" src="images/logo.png" alt="Seaside K9s Logo">
-                </a>
+                <a href="./index.html" class="logo__wrapper"> 
+                    <img class="header__logo" src="images/logo.png" alt="Seaside K9s Logo">
+                    <h5 class="logoText">Seaside K9s</h5>
+                </a>    
                 <i class="header__button fas fa-bars"></i>
                 <nav class="header__nav hidden">
                     <a href="./aboutus.html"> About Us</a>
                     <a href="./services.html">Services</a>
                     <a href="./FAQ.html">FAQ</a>
 
-                    <a class="cta" href="https://doxford.net/920ae2ae-3ee6-4462-8ea6-10e4676f7081/register">Book</a>
+                    <a class="cta" href="sms: +12077038329">Book</a>
                 </nav>
             </section>
         </header>
@@ -33,7 +53,7 @@
                     <img class="negmargin extra_width" src="images/group.jpeg" alt="Seaside K9 clients">
                 </section>
                 <h3 class="font-large padding_left-small under_headline">Our Services</h3> 
-                <div class="main no_padding-bottom">
+                <div class="main no_padding-bottom padding-right">
                 <section class="list">
                     <div class="third__container">
                         <div>

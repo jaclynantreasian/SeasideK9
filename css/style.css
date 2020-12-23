@@ -1,7 +1,9 @@
 *{
 	box-sizing: border-box;
 }
-
+ a{
+    text-decoration: none;
+ }
 
 body{
 	font-size: 1em;
@@ -38,6 +40,10 @@ body{
     padding-bottom: 40px;
 }
 
+.container-index{
+    padding-top: 50px;
+
+}
 
 .copy{
 	line-height: 1.5em;
@@ -105,7 +111,7 @@ body{
 
 
 .extra_width{
-    width: 120%;
+    width: 100%;
 }
 
 .fab.fa-instagram{
@@ -142,7 +148,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 0 20px;
-    background-color: #474747;
+    background-color: #393939;
 }
 
 .footer_container{
@@ -165,13 +171,13 @@ body{
 }
 
 .greenGradient{
-      background-image: linear-gradient(to right, #1b6964
-    , #008e92);
+      background-image: linear-gradient(to right, #215e5a
+    , #50908A);
     }
 
 .header{
     display: flex;
-    background-color: #474747;
+    background-color: #393939;
     width: 100%;
     z-index: 100;
     padding: 0 10px;
@@ -197,7 +203,8 @@ body{
 }
 
 .header__logo{
-    height: 30px;
+    height: 40px;
+    padding-right: 10px;
 }
 
 .header__nav{
@@ -238,17 +245,13 @@ body{
 
 .desktop__header,
 .mobile__header{
-    text-align: center;
     line-height: 1.25em;
-    padding: 1em 0 .5em 0;
     font-family: "karla";
     font-size: 2.5em
 
 }
 .mobile__header{
     margin: 0;
-    padding-top: 2em;
-
 }
 
 h2{
@@ -308,7 +311,6 @@ li{
 
 .negmargin{
     margin-top: -100px;
-    margin-left: -50px;
 }
 
 .nomargin{
@@ -332,6 +334,20 @@ li.testimonial{
     padding: 0 20px;
 }
 
+
+.logoText{
+    font-family: "Pacifico", cursive;
+    color: #3BAFA3;
+    font-size: 30px;
+    margin: 0;
+    line-height: .85em;
+}
+
+.logo__wrapper{
+    display: flex;
+    height: 40px;
+    }
+
  .padding__five{
     padding: 5px;
  }
@@ -347,6 +363,9 @@ li.testimonial{
 .padding_left-large{
         padding-left: 20px;
     }
+.padding-right{
+    padding-right: 10px;
+}
 
 .padding__ten{
     padding: 10px;
@@ -403,6 +422,10 @@ padding: 30px;
 .purple,
 .purpleGradient{
     background-color: #80759A;
+}
+
+.purplepaw{
+    height: 200px;
 }
 
 .round{
