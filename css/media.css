@@ -14,7 +14,8 @@
 @media only screen and (min-width: 992px) {
 		
 	.header__nav a:hover, 
-	.header__nav a.active{
+	.header__nav a.active,
+	.header__nav a:active{
 		color: #fff;
 		background-color: #060606;
 	}
@@ -88,9 +89,21 @@
 	}
 
 	.doghero{
-		width: 100%;
+		max-height: 650px;
+	}
+
+	.dog_large{
+		display: flex;
 		position: absolute;
 		bottom: 0;
+		left: 0;
+		max-width: 1200px;
+		transform: translate(-85%, 0);
+		overflow: visible;
+	}
+
+	.doghero--flipped{
+		transform: scaleX(-1);
 	}
 
 	.extra_width{
@@ -135,7 +148,6 @@
 	.full_page_headline{
 		padding-top: 90px;
 	    font-size: 2.5em;
-	    margin-left: 20px;
 	}
 
 	.full_page_headline--noPadding{
@@ -203,6 +215,10 @@
 		max-width: 1200px;
 		display: flex;
 		justify-content: center;
+	}
+
+	.mobile__header{
+		display: none;
 	}
 
 	.negmargin{
@@ -440,3 +456,19 @@
 		margin-top: 25px;
 	}
 }
+
+
+@media only screen and (min-width: 1300px){
+	.title_section_container{
+		max-height: 860px;
+
+	}
+	.paw1{
+		left: 890px
+	} 
+
+	.paw5{
+		left: 800px;
+	} 
+}
+

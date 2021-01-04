@@ -250,8 +250,11 @@ body{
     font-size: 2.5em
 
 }
+
 .mobile__header{
-    margin: 0;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    display: initial;
 }
 
 h2{
