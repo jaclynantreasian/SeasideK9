@@ -255,6 +255,7 @@ body{
     padding-left: 20px;
     margin-bottom: 20px;
     display: initial;
+    color: black;
 }
 
 h2{
@@ -552,4 +553,27 @@ ul{
     margin-bottom: 0;
 }
 
+.white{
+    background-color: #f7f7ef;
+    width: 100%;
+}
 
+.black{
+    color: black;
+}
+
+.whitebg{
+    height: 460px;
+}
+.whitebg:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    opacity: 75%;
+    z-index: -1;
+    border-radius: 5%;
+}
