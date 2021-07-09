@@ -4,12 +4,20 @@
 	top: 700px;
 }
 
-.paw5{
-	top: 600px;
-}
 
 }
+@media only screen and (max-width: 760px) {
+/* Force table to not be like tables anymore */
+tbody{ 
+	display: block;
+	width: 100%;
+}
 
+thead tr{
+	display:block;
+  }
+
+}
 
 @media only screen and (min-width: 992px) {
 		
@@ -163,6 +171,10 @@
 		overflow: hidden;
 	}
 
+	.hide{
+		display: revert;
+	}
+
 	.header__nav.hidden{
 		position: relative;
 		min-height: auto;
@@ -180,6 +192,7 @@
 		border: solid transparent;
 
 	}
+
 
 
 	.holiday_container{
@@ -203,9 +216,10 @@
 	}
 
 	.main{
-		padding: 0;
+		padding: 0px 0px 30px 0px;   
 		display: flex;
 		justify-content: center;
+		padding: 0px 0px 30px 0px;   
 	}
 
 	.main--top-margin{
@@ -225,6 +239,8 @@
 	.negmargin{
 		margin-left: 0;
 	}
+
+
 
 	.no_padding{
 		padding-left: 0;
@@ -276,8 +292,8 @@
 	}
 
 	.paw5{
-		top: 70px;
-		left: 570px;
+	    top: 680px;
+    left: 174px;
 	}
 
 	.picture{
@@ -295,8 +311,8 @@
 	}
 
 	.picture_fullpage_about{
-		padding-top: 120px;
-		width: 40%;
+		padding-top: 100px;
+		width: 70%;
 			overflow: hidden;
 			border-radius: 5%;
 			margin: 0 auto;
@@ -378,11 +394,13 @@
 		display: flex;
 		flex-direction: column;
 		padding-top: 0;
+		max-width: 1200px;
 	}
 
 	.sixty{
-		width: 60%;
-		padding-left: 5%;
+		width: 70%;
+		padding-left: 0;
+		margin: 0 auto;
 	}
 
 	.space_around{
@@ -424,10 +442,10 @@
 		margin-left: 12%;
 	}
 
-	ul{
+/*	ul{
 		display: flex;
 	}
-
+*/
 	.text{
 		padding-left: 0;
 	}
@@ -454,16 +472,21 @@
 
 	.under_headline{
 		margin-bottom: 20px;
-		margin-top: 25px;
 	}
-}
+
+
+	.whitebg:after{
+		background: white;
+	}
+
 
 
 @media only screen and (min-width: 1300px){
 	.title_section_container{
 		max-height: 860px;
-
+		padding-top: 40px;
 	}
+
 	.paw1{
 		left: 890px
 	} 
