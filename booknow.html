@@ -8,15 +8,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://use.typekit.net/tps0ebx.css">
         <link href="https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans:wght@400;500;600;700&family=Aclonica&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 
         <link rel="stylesheet" type="text/css" href="css/normalize.css">   
         <link rel="stylesheet" type="text/css" href="css/style.css"> 
-        <link rel="stylesheet" type="text/css" href="css/media.css">  
+        <link rel="stylesheet" type="text/css" href="css/media.css"> 
+        <link rel="stylesheet" type="text/css" href="css/contact-form.css">
+
          <script src="script/jquery-1.9.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
         <script src="script/seasidek9.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+
     </head>
     <body>
         <header class="header">
@@ -38,92 +44,111 @@
 
 <body>
 
-<link href="contact-form.css" rel="stylesheet">
-<div class="flex_parent">
+<div class="container">
 <div class="fcf-body">
-    <div id="fcf-form">
-    <h3 class="fcf-h3">New Cient Contact Form</h3>
+    <div id="form">
+    <h3 class="fcf-h3">New Cient Contact Form</h3><form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputFullName">Full Name</label>
+            <input type="text" class="form-control" id="inputFullName">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>    
+        </div>
+        <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Cell Phone Number</label>
+          <input type="text" class="form-control" id="inputAddress">
+        </div>
+  
+          <div class="form-group col-md-6">
+            <label for="inputState">Preferred Method of Contact</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputFullName">Pet(s) Name</label>
+            <input type="text" class="form-control" id="inputFullName">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputEmail4">Ages of Pet(s)</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>    
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputFullName">Date(s) Needed</label>
+            <input type="text" class="form-control" id="inputFullName">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="formGroupExampleInput">Type(s) of service</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Daycare
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                Pick-up/ Drop-Off
+                </label>
+            </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                    Sleepover
+                    </label>
+                </div>
+                 <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        House Sitting
+                        </label>
+                      </div> 
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                         <label class="form-check-label" for="defaultCheck1">
+                             Grooming
+                             </label>
+                         </div>
+                        </div>
+                         <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputFullName">Referred by:</label>
+                            <input type="text" class="form-control" id="inputFullName">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Additional Information</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>    
+                        </div>
+             
+        </div>
+      </form>
 
 
     <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
         
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Full Name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
+       
+        
+        <form action="?" method="POST">
+            <div class="g-recaptcha" data-sitekey="6LdJhccbAAAAAFCDt6w4gPV9n6eNfzI9ZG29Pmpx
+            "></div>
+            <br/>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
         </div>
-
-
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Email Address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
         </div>
-
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Cel Phone Number</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Preferred Method of Contact (text or email)</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Pet(s) name</label>
-            <div class="fcf-input-group">
-                <textarea id="text" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Age of Pet(s)</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Age of Pet(s)</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Dates and Types of Service (Daycare, Sleepover etc)</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Referred by:</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Additional Information</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="cta__button__orange">Book Now!</button>
-        </div>
-
-    </form>
-    </div>   
-</div>
-<div class="">
-    <img class="halfpic" src="images/sunsetdog.jpeg" alt="Seaside K9s pups"></a>
     </div>
-</div>
 <footer>
     <section class="footer_parent">
             <div class="centerText">
@@ -141,5 +166,9 @@
             </div>
         </section>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -114,6 +114,8 @@ body{
 .dog_mobile{
     position: relative;
     width: 100%;
+    margin-bottom: -10px;
+
 }
 
 
@@ -387,6 +389,8 @@ li{
 
 li.testimonial{
     padding: 0 20px;
+    list-style: none;
+
 }
 
 
