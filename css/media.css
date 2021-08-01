@@ -64,7 +64,6 @@ thead tr{
 
 	.conclusion{
 		text-align: center;
-		 padding-bottom: 100px;
 	}
 
 	.custompad{
@@ -198,6 +197,10 @@ thead tr{
 		border: solid transparent;
 	}
 
+	.hundredTop{
+		padding-top: 100px;
+	}
+
 .image{
     margin: 50px 0 50px 200px;
 }
@@ -264,7 +267,9 @@ thead tr{
 	}
 
 
-
+.padSeventyFive{
+	padding-top: 75px;
+}
 	.no_padding{
 		padding-left: 0;
 	}
@@ -367,7 +372,7 @@ thead tr{
 		justify-content: flex-end;
 	}
 
-	.row {
+	.row2 {
 		padding-right: 40px;
 		flex-direction: column;
 	}
@@ -431,6 +436,11 @@ thead tr{
 		flex-direction: row;
 		width: 700px;
 		justify-content: flex-start;
+	}
+
+	.space__between{
+		display: flex;
+    	justify-content: space-between;
 	}
 	.space_top{
 		padding-top: 4em;

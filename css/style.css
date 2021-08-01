@@ -5,6 +5,12 @@
     text-decoration: none;
  }
 
+
+
+ .blackbg{
+     background-color: black;
+     height: 1000px;
+ }
 body{
 	font-size: 1em;
 	color: white;
@@ -88,6 +94,9 @@ body{
 
 }
 
+.checklabel{
+    padding-left: 9em;
+}
 .custompad{
     padding-top: 50px;
     padding-bottom: 70px;
@@ -115,10 +124,15 @@ body{
     position: relative;
     width: 100%;
     margin-bottom: -10px;
-
 }
 
+.errorCode{
+    color: red;
+}
 
+.eightHun{
+height: 800px;
+}
 .extra_width{
     width: 100%;
 }
@@ -158,6 +172,7 @@ body{
     flex-direction: column;
     padding: 0 20px;
     background-color: #393939;
+    width: 100%;
 }
 
 .footer_container{
@@ -503,8 +518,6 @@ padding: 30px;
 .row_container{
     padding-bottom: 40px;
 }
-
-.row
 
 .section__container{
     position: relative;
