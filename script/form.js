@@ -1,4 +1,4 @@
-const checkEmpty = (s) => s == "" || undefined;
+const checkEmpty = (elem) => elem === "" || undefined;
 const handleEmptyString = (s) => `**Please enter a ${s}`;
 function validateEmail($email) {
     var emailReg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -9,91 +9,84 @@ jQuery(document).ready(function($) {
 
     $('.btn-submit').click(function(e){
         e.preventDefault();
+
+        $(".is-invalid").removeClass("is-invalid");
         const errorContainer = $(".errorCode");
         errorContainer.empty();  
+        var error =  [];
     
-        var fullName = $('#inputFullName').val();
-        
-        var email = $('#inputEmail').val();
-        var phone = $('#inputPhone').val();
+        var fullName = $('#inputFullName');
+        var email = $('#inputEmail');
+        var phone = $('#inputPhone');
+        var petName = $('#inputPetName');
+        var petAge = $('#inputPetAge');
+
         var preferred = $('#inputPreferred').val();
+       
+
         var date = $('#inputDate').val();
         var dateTwo = $('#inputDateTwo').val();
-        var petName = $('#inputPetName').val();
-        var petAge = $('#inputPetAge').val();
+       
         var dateTwo = $('#inputDateTwo').val();
         var daycare = $("#checkDayCare").is(":checked");
         var pickup = $("#checkPickUp").is(":checked");
         var sleepover = $("#checksleepover").is(":checked");
         var houseSitting = $("#checkHouseSitting").is(":checked");
-        var houseSitting = $("#checkGrooming").is(":checked")
-
-
-
-
+        var houseSitting = $("#checkGrooming").is(":checked");
         var referred = $('#inputReferred').val();
         var addlInfo = $("textarea").val();
-
-        var error =  [];
+        console.log("error array", error)
         
-
-        console.log(fullName, email, phone, preferred, date, dateTwo,
-        petName, daycare, pickup, houseSitting, sleepover, petAge, referred, addlInfo);
-
-
-        // an example error
-        /* var error = {
-            error: string,
-            message: string
-        }
-        */
-
-        // push errors to error array
-
-        if(checkEmpty(fullName)) {
+        if(checkEmpty(fullName.val())) {
+            console.log("infull name", fullName.val())
             error.push({
-                type: "name",
+                elem: fullName,
                 message: handleEmptyString("valid name")
             });
-            }
+        }
 
-
-        if( !validateEmail(email)){
+        if( !validateEmail(email.val())){
             error.push({
-                type: "email",
+                elem: email,
                 message: handleEmptyString("valid email")
             })
         }
 
-        if(phone.length !== 10) {
+        if(phone.val().length !== 10) {
+            console.log(phone.length)
             error.push({
-                type: "number",
+                elem: phone,
                 message: handleEmptyString("valid 10 digit number")
             });
-            }
+        }
 
-
-        if(checkEmpty(petName)) {
+        if(checkEmpty(petName.val())) {
             error.push({
-                type: "pet name",
+                elem: petName,
                 message: handleEmptyString("pet name")
             });
-            }
+        }
 
-            if(checkEmpty(petAge)) {
-                error.push({
-                    type: "pet age",
-                    message: handleEmptyString("pet age")
-                });
-                }
+        if(checkEmpty(petAge.val())) {
+            error.push({
+                elem: petAge,
+                message: handleEmptyString("pet age")
+            });
+        }
 
-             if(error.length > 0){
-                errorContainer.append("***Please complete all the required fields");
-             }   
+        if(error.length > 0){
+            errorContainer.append("***Please complete all the required fields");
 
-console.log(error, "error")
-    // if(phone.length !== 10)  // a 10 digit phone number with no slashes is required aka 6172222020
-    // if (petAge == "") // Pet's age is required
+            $.each(error, function(index, value){
+                console.log("inloop", value.elem)
+                console.log(value, index);
+                // $(fullName).addClass("is-invalid")
+                value.elem.addClass("is-invalid")
+            });
+        }   
+
+
+        console.log(error, "error")
     });
 
 });
