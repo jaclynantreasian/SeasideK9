@@ -1,3 +1,4 @@
+const handleError = (elem) => (m) => elem.append(m)
 const checkEmpty = (elem) => elem === "" || undefined;
 const handleEmptyString = (s) => `**Please enter a ${s}`;
 function validateEmail($email) {
@@ -13,6 +14,7 @@ jQuery(document).ready(function($) {
         $(".is-invalid").removeClass("is-invalid");
         const errorContainer = $(".errorCode");
         errorContainer.empty();  
+        const setError = handleError(errorContainer)
         var error =  [];
     
         var fullName = $('#inputFullName');
@@ -75,7 +77,7 @@ jQuery(document).ready(function($) {
         }
 
         if(error.length > 0){
-            errorContainer.append("***Please complete all the required fields");
+            setError("***Please complete all the required fields");
 
             $.each(error, function(index, value){
                 console.log("inloop", value.elem)
@@ -83,8 +85,24 @@ jQuery(document).ready(function($) {
                 // $(fullName).addClass("is-invalid")
                 value.elem.addClass("is-invalid")
             });
-        }   
-
+            return;
+        }  
+         
+        $.ajax({
+            url: "script/sendMail.php", 
+            type: "post",
+            success: function(result){
+            console.log('success', result)            
+            },
+            error: () => setError ("something went wrong please try again later"),
+            data: {
+                petAge: petAge.val(),
+                fullName: fullName.val(),
+                email: email.val(),
+                phone: phone.val(),
+                petName: petName.val(),
+            }
+        });
 
         console.log(error, "error")
     });
