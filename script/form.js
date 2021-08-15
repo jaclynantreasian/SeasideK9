@@ -89,7 +89,7 @@ jQuery(document).ready(function($) {
         }  
          
         $.ajax({
-            url: "script/sendMail.php", 
+            url: "./script/sendMail.php", 
             type: "post",
             success: function(result){
             console.log('success', result)            

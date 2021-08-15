@@ -20,22 +20,8 @@ form {
     height: 900px;
     overflow: hidden;
 }
-.fcf-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-family: 'Karla', Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-    padding: 30px;
-    padding-bottom: 10px;
-    border-radius: 0.25rem;
-    float: right;
-}
+
+
 
 
 
@@ -52,6 +38,10 @@ form {
     -ms-flex-align: stretch;
     align-items: stretch;
     width: 100%;
+}
+
+.fcf-h3{
+    padding-top: 0;
 }
 
 .form-control {
@@ -131,7 +121,6 @@ label.fcf-label {
 }
 
 .fcf-btn:hover {
-    color: #212529;
     text-decoration: none;
 }
 
@@ -177,4 +166,7 @@ label.fcf-label {
 
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
+}
+
+.hundredTop{
 }
