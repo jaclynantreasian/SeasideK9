@@ -6,7 +6,6 @@
  }
 
 
-
  .blackbg{
      background-color: black;
      height: 1000px;
@@ -20,6 +19,10 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+}
+
+.border__radius__mobile{
+    border-radius: 5%;
 }
 
 .button_parent{
@@ -89,10 +92,6 @@ body{
     line-height: 30px;
 }
 
-.cta__button__orange:hover{
-    background-color: #393939;
-
-}
 
 .checklabel{
     padding-left: 9em;
@@ -153,6 +152,12 @@ height: 800px;
     color: #fff;
 }
 
+.fifty{
+    margin: 0 50px 50px 50px;
+    padding: 50px 50px 0 50px; 
+     border-radius: 5%;
+
+}
 
 .framepaw{
     height: 200px;
@@ -259,8 +264,16 @@ height: 800px;
 
 .green{
       background-color: #50908A;
-      width: 100%;
 }
+
+.greenText{
+    color:#50908A;
+}
+
+.headerText{
+    margin: 10px 0;
+}
+
 .headline{
     font-size: 36px;
 }
@@ -274,8 +287,30 @@ height: 800px;
     width: 100%;
 }
 
+.icon{
+    width: 70px;
+}
+
+.icon2{
+    width: 60px;
+    position: absolute;
+    left: -33px;
+    top: 46px;
+    right: auto;
+    bottom: auto;
+}
+
+.relative{
+    position: relative;
+}
+
 .italic{
     font-style: italic;
+}
+
+.leftMargin{
+    margin-bottom: 0;
+    margin-left: 50px;
 }
 
 .desktop__header,
@@ -295,23 +330,51 @@ height: 800px;
 }
 
 h2{
-    font-family: "Karla";
+    font-family: "Kanit";
     font-size: 2.25em;
+    font-weight: 500;
 }
 
 h3{
 	margin-top: 0;
 	padding-top: 20px;
 	font-size: 1.5em;
-	font-weight: bold;
-	font-family: "Karla";
+	font-weight: 500;
+    font-family: "Kanit";
+    margin-bottom: 10px;
 }
 
-h5{
-    font-family: "Karla";
-    font-size: 1.25em;
-	margin: 0;
+.noPadTop{
+    margin-top: 0;
 }
+
+h4{
+    margin-bottom: 10px;
+}
+h5{
+    font-family: "Kanit";
+    font-size: 1.25em;
+    margin: 0;
+    font-weight: 500;
+}
+
+.hundredWidth{
+    width: 100%;
+}
+
+.desktopDisplay{
+    display: none;
+}
+
+
+
+.image_parent{
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+
 
 .last{
         margin-bottom: 0;
@@ -383,7 +446,23 @@ li{
 .negmargin{
     margin-top: -100px;
 }
+.fcf-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Karla', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    padding-bottom: 10px;
+    border-radius: 0.25rem;
+    float: right;
+    padding: 100px 30px 30px 30px;
 
+}
 .nomargin{
     margin: 0;
 }
@@ -449,6 +528,10 @@ li.testimonial{
     padding-bottom: 10px;
 }
 
+.paddingTop{
+    padding-top: 70px;
+}
+
 .paw1{
     width: 200px;
     position: absolute;
@@ -492,10 +575,12 @@ padding: 30px;
 	width: 100%;
 }
 
-
 .purple,
 .purpleGradient{
     background-color: #80759A;
+}
+.purpleText{
+    color:  #80759A;
 }
 
 .purplepaw{
@@ -609,6 +694,27 @@ padding: 30px;
     z-index: 2;
 }
 
+.third{
+    background-color: #f7f7f7;
+    color: black;
+    padding: 30px 15px;
+    margin: 50px 30px;
+    border-radius: 5%;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.third2{
+    background-color: #f7f7f7;
+    color: black;
+    padding: 30px 15px;
+    margin: 50px;
+    border-radius: 5%;
+    text-align: center;
+    line-height: 1.5em;
+
+}
+
 ul{
     padding-left: 0;
 }
@@ -632,6 +738,14 @@ table, th, td {
     text-align: center;
     min-width: 50px;
   }
+
+.neg{    
+    margin-left: -250px;
+}
+.overflow_image{
+    overflow: hidden;
+    border-radius: 5%;
+}
 
  .blank {
     background-color: #f1f1f1;
@@ -674,7 +788,27 @@ table, th, td {
     z-index: -1;
     
 }
+.padBottom{
+	padding-bottom: 20px;
+}
+
 
 .lightBlue{
     background-color:#cae8f2;
+}
+
+.margin-15{
+    margin: 15px;
+}
+
+.noMarginTop{
+    margin-bottom: 0;
+}
+
+.doghero{
+    border-radius: 0;
+}
+
+.noTop{
+    padding-top: 0;
 }
