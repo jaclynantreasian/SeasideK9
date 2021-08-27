@@ -25,17 +25,16 @@ body{
     border-radius: 5%;
 }
 
+
+
 .button_parent{
     padding: 20px 0 40px 0;
 }
 
-
-
 .centerText{
-    padding: 40px 0 20px 0;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
     text-align: center;
     justify-content: center;
 }
@@ -123,6 +122,7 @@ body{
     position: relative;
     width: 100%;
     margin-bottom: -10px;
+    padding-top: 20px;
 }
 
 .errorCode{
@@ -136,10 +136,12 @@ height: 800px;
     width: 100%;
 }
 
-.fab.fa-instagram{
+.fab.fa-instagram, .fab.fa-tiktok{
+    padding: 10px;
     font-size: 2em;
     text-decoration: none;
     color: #ffffff;
+    opacity: 60%;
 }
 
 .fas.fa-bars{
@@ -313,16 +315,12 @@ height: 800px;
     margin-left: 50px;
 }
 
-.desktop__header,
-.mobile__header{
+
+.desktop__header{
     line-height: 1.25em;
     font-family: "Pacifico";
-    font-size: 2.5em
-
-}
-
-.mobile__header{
-    margin-bottom: 30px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
     margin-top: -10px;
     display: initial;
     color: black;
@@ -361,11 +359,6 @@ h5{
 .hundredWidth{
     width: 100%;
 }
-
-.desktopDisplay{
-    display: none;
-}
-
 
 
 .image_parent{
@@ -460,7 +453,7 @@ li{
     padding-bottom: 10px;
     border-radius: 0.25rem;
     float: right;
-    padding: 100px 30px 30px 30px;
+    padding: 60px 30px 30px 30px;
 
 }
 .nomargin{
@@ -502,7 +495,7 @@ li.testimonial{
     }
 
  .padding__five{
-    padding: 5px;
+    padding-left: 15px;
  }
 
 .padding_left{

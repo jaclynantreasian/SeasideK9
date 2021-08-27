@@ -49,10 +49,14 @@
 
   <div class="container">
     <div class="row padSeventyFive">
-      <div class="col-md-6">
+      <div class="col-md-6 d-md-flex d-none">
         <img class="eightHun desktopDisplay" src="images/screenshot.png"/>
       </div>
-      <div class="fcf-body col-md-6">
+      <div class="col-md-6" id="successContainer">
+        <p>Thanks for contacting SeasideK9s, we are currently busy caring for other 
+          pups and will get back to you in 24-48 hours.</p>
+      </div>
+      <div class="fcf-body col-md-6" id="formContainer">
         <div id="form">
           <h3 class="fcf-h3 greenText">New Cient Contact Form</h3>
            <p> To inquire about joining our pack, please fill out this form below.
@@ -72,11 +76,12 @@
               </div>    
             </div>
 
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputAddress">Cell Phone Number*</label>
-                <input type="text" class="form-control teal-border-focus" id="inputPhone"/>
-              </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputPhone">Cell Phone Number</label>
+            <input type="tel" placeholder="1234567890" class="form-control teal-border-focus" id="inputPhone" name="phone" 
+            pattern="[0-9]{10}"> 
+            </div>
     
               <div class="form-group col-md-6">
                 <label for="inputPreferred">Preferred Method of Contact*</label>
@@ -152,11 +157,11 @@
              
             </div>
           </div>       
-          <!--CAPTCHA--<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">  
+          <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">  
           <div class="g-recaptcha" data-sitekey="6LdJhccbAAAAAFCDt6w4gPV9n6eNfzI9ZG29Pmpx
-          "></div> ---->
+          "></div>
           <br/>
-          <button type="submit" class="btn btn-primary btn-submit">Book Now</button>
+          <button type="submit" class="btn cta__button__orange btn-submit">Book Now</button>
         </form>
       </div>
     </div>

@@ -8,7 +8,7 @@
 }
 @media only screen and (max-width: 760px) {
 /* Force table to not be like tables anymore */
-tbody{ 
+tbody{
 	display: block;
 	width: 100%;
 }
@@ -20,8 +20,8 @@ thead tr{
 }
 
 @media only screen and (min-width: 992px) {
-		
-	.header__nav a:hover, 
+
+	.header__nav a:hover,
 	.header__nav a.active,
 	.header__nav a:active{
 		color: #fff;
@@ -72,15 +72,12 @@ thead tr{
 		justify-content: center;
 	}
 
-	.desktop__header{
-			 display: initial;
-	}
 
 	.hundredWidth{
 		display: initial;
          border-radius: 5%;
 	}
-	 
+
 	.dog{
 		padding-top: 3em;
 		margin-bottom: 0;
@@ -130,7 +127,7 @@ thead tr{
 			width: 70%;
 	}
 
-	
+
 
 	.fifty{
 	width: 50%;
@@ -219,10 +216,6 @@ thead tr{
 	.negMarginTop{
 		margin-top: -100px;
 	}
-	
-.desktopDisplay{
-	display: initial;
-}
 
 
 img{
@@ -266,9 +259,9 @@ img{
 	}
 
 	.main, .mainHome{
-		padding: 0px 0px 30px 0px;   
+		padding: 0px 0px 30px 0px;
 		display: flex;
-		justify-content: center;  
+		justify-content: center;
 
 	}
 
@@ -284,10 +277,6 @@ img{
 		max-width: 1200px;
 		display: flex;
 		justify-content: center;
-	}
-
-	.mobile__header{
-		display: none;
 	}
 
 	.negmargin{
@@ -309,7 +298,7 @@ img{
 	.padding_left-med{
 		width: 50%;
 	    padding-left: 40px;
-	    padding-right: 20px; 
+	    padding-right: 20px;
 	    margin-bottom: 0;
 	    justify-content: space-between;
 	    width: 50%;
@@ -334,7 +323,7 @@ img{
 		position: absolute;
 		bottom: 33px;
 		left: 373px;
-		width: 20%;    	
+		width: 20%;
 	}
 
 	.paw3{
@@ -405,7 +394,7 @@ img{
 		flex-direction: column;
 	}
 
-	.section__container, 
+	.section__container,
 	.section__container_two,
 	.sectionThird{
 		margin: 3rem 0;
@@ -529,8 +518,8 @@ img{
 	}
 
 	.test__header{
-	padding: 50px 0 20px 40px;		
-	margin-bottom: 0;	
+	padding: 50px 0 20px 40px;
+	margin-bottom: 0;
 	}
 
 	.third, .third2{
@@ -546,7 +535,7 @@ img{
 	}
 
 	.whitebg{
-		height: 450px;
+		height: 420px;
 	}
 
 	.whitebg:after{
@@ -561,15 +550,14 @@ img{
 
 
 @media only screen and (min-width: 1300px){
-	
+
 	.paw1{
 		left: 890px
-	} 
+	}
 
 	.paw5{
 		left: 800px;
 	}
 
-	
-}
 
+}
